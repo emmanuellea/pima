@@ -19,7 +19,7 @@ import pickle
 
 app=Flask(__name__)
 
-filename = 'C:/Users/User/Desktop/new/static/finalized_model.sav'
+filename = 'static/finalized_model.sav'
 
 @app.route('/')
 def home():
