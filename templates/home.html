@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+  
+  </head>
+  <body>
+  
+  
+  {% extends "template.html" %}
+  
+  {% block content %}
+  
+  
+  <div class="container">
+  
+  <div class='row'>
+         <div class='jumbotron text-center'>
+		       <h2>Machine Learning</h2>
+			   <p>Predicting Diabetic patients in indian pima using machine learning algorithm</p>
+		 </div>
+		 
+		 <br></br>
+		 
+		 <form action = "http://localhost:5000/result" method = "POST" autocomplete=False>
+		 
+		 <div class='col-md-6'>
+  <div class="form-group">
+    <label for="math">Pregnancies:</label>
+    <input type="text" class="form-control" id="Pregnancies" placeholder="Enter Pregnancies"  name='pregnancies'>
+    </div>
+  
+  <div class="form-group">
+    <label for="Glucose">Glucose:</label>
+     <input type="text" class="form-control" id="Glucose" placeholder="Enter Glucose"  name='glucose'>
+  </div>
+  
+  <div class="form-group">
+    <label for="BloodPressure">BloodPressure:</label>
+     <input type="text" class="form-control" id="BloodPressure" placeholder="Enter BloodPressure" name='bloodPressure'>
+  </div>
+  
+  <div class="form-group">
+    <label for="skinThickness">SkinThickness:</label>
+     <input type="text" class="form-control" id="skinThickness" placeholder="Enter skinThickness" name='skinThickness'>
+  </div>
+  
+  </div>
+  
+  <div class='col-md-6'>
+  
+  <div class="form-group">
+    <label for="math">Insulin:</label>
+    <input type="text" class="form-control" id="insulin" placeholder="Enter insulin"  name='insulin'>
+    </div>
+  
+  <div class="form-group">
+    <label for="chemistry">BMI:</label>
+     <input type="text" class="form-control" id="bmi" placeholder="BMI"  name='bmi'>
+	 </div>
+  
+  <div class="form-group">
+    <label for="Diabetes">DiabetesPedigreeFunction:</label>
+     <input type="text" class="form-control" id="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" name='DiabetesPedigreeFunction'>
+  </div>
+  
+  <div class="form-group">
+    <label for="english">Age:</label>
+     <input type="text" class="form-control" id="age" placeholder="Enter Age" name='Age'>
+  </div>
+  
+  </diV>
+ 
+  
+  
+  <br></br>
+  
+  <div class="form-group">
+    <div>
+      <button type="submit" class="btn btn-primary btn-block">Make Prediction</button>
+    </div>
+  </div>
+  
+</form>
+</div>
+</div>
+	  
+	
+  {% endblock %}
+  </body>
+</html>

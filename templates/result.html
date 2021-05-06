@@ -1,0 +1,38 @@
+
+
+<!doctype html>
+<html>
+   <body>
+
+  {% extends "template.html" %}
+  {% block content %}
+   
+<div class="container">
+  <div class='jumbotron text-center'>
+		       <h4>Machine Learning</h4>
+			   <p>Predicted Results:</p>
+		 </div>
+    
+
+ <br></br>
+ 
+ <div class="alert alert-success">
+  <strong>You are predicted as: </strong> {{ result }}.
+</div>
+ 
+  <table class="table table-hover">
+  
+  {% for key, value in data.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+  {% endfor %}
+  
+  {% endblock %}
+    
+  </table>
+  </div>
+	  
+   </body>
+</html>
